@@ -34,6 +34,8 @@ def main():
 
         outfn = "loop{}-{}bpm.wav".format(sample['id'],sample['bpm'].replace('.','_'))
         outpath = os.path.join(args.outputdir,outfn)
+        if args.outputdir and not os.path.exists(os.path.dirname(outpath)):
+            os.makedirs(os.path.dirname(outpath))
 
         if args.roundbpm:
             print("Stretching sample..")
