@@ -2,7 +2,7 @@
 
 Extract and reorganize recordings from the JamMan loop sequencer by DigiTech.
 
-The recording can also be timestretched with the --roundbpm option so that its bpm is a whole number.
+The bpm of the extracted sample(s) is given in the sample file name. JamMan uses tap tempo which generates fractional values for bpm. If whole number bpm is desired, the recording can be timestretched with the --roundbpm option.
 
 
 ## Usage
@@ -23,12 +23,12 @@ JamMan patch folder structure is as follows
 
 Running the command `python jamman-rip JamManStereo` produces the following files:
 
-    loop01-98_552001bpm.wav
-    loop02-118_10164bpm.wav
+    loop01-98_552001bpm.wav (98.552001bpm)
+    loop02-118_10164bpm.wav (118.10164bpm)
 
 Running the command `python jamman-rip JamManStereo --roundbpm` produces the following files (with timestrech modification):
 
-    loop01-99bpm.wav
-    loop02-118bpm.wav
+    loop01-99bpm.wav (99bpm)
+    loop02-118bpm.wav (118bpm)
 
 
