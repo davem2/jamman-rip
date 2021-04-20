@@ -21,12 +21,12 @@ JamMan patch folder structure is as follows
             phrase.wav
 
 
-Running the command `python jamman-rip JamManStereo` produces the following files:
+Running the command `python jamman-rip.py JamManStereo` produces the following files:
 
     loop01-98_552001bpm.wav (98.552001bpm)
     loop02-118_10164bpm.wav (118.10164bpm)
 
-Running the command `python jamman-rip JamManStereo --roundbpm` produces the following files (with timestrech modification):
+Running the command `python jamman-rip.py JamManStereo --roundbpm` produces the following files (with timestrech modification):
 
     loop01-99bpm.wav (99bpm)
     loop02-118bpm.wav (118bpm)
